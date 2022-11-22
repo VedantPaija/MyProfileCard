@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+body{
+    background: url(1.png) no-repeat center;
+    font: 18px "Nunito", sans-serif;
+    color: black;
+    min-height: 100 vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    animation: BackgroundZoomAnimate 2s;
+}
+
+@keyframes BackgroundZoomAnimate {
+    from {
+        transform: scale(0.5);
+    } to {
+        transform: scale(1);
+    }
+}
+
+.profile-card {
+    box-shadow: 18px 200px -60px black;
+    border-radius: 10px;
+    width: 650px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 2px solid #ffffff40;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.profile-card img {
+    margin: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 60px -10px rgba(13, 28, 39, 0.5);
+    display: block;
+}
+
+.profile-card_desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.profile-card_social {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.LinkedIn {
+    background: linear-gradient(45deg, #3b5598, #0078d7);
+    box-shadow: 0 4px 3px rgba(43,98,169,0.5);
+    border-radius: 10px;
+}
+
+.GitHub {
+    background: linear-gradient(45deg, #c2ffd8, #465efb);
+    box-shadow: 0 4px 3px rgba(63,65,67,0.6);
+    border-radius: 10px;
+}
